@@ -1,0 +1,268 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-red: #ed796d;
+    --primary-red-dark: #eb5948;
+    --primary-green: #FF5160;
+    
+}
+h4 {
+    color: black;
+    text-align: left;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding: 2rem 1rem 0rem;
+}
+.titre{
+    line-height: 2px;
+}
+
+.container {
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgb(196 196 196);
+    flex-basis: 400px;
+}
+.row {
+    margin-left: -30px;
+}
+
+.container-heading {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.form {
+    padding: 3rem 0em 4em 1em;
+}
+
+.form .form-control {
+    position: relative;
+    width: 100%;
+    display: block;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0px;
+   
+}
+
+.form .form-control input {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+   
+}
+
+
+.form .form-control label.active {
+    transform: translateY(-10%) scale(0.9);
+    color: var(--primary-green);
+}
+
+
+.form .form-control small {
+    visibility: hidden;
+    color: var(--primary-red-dark);
+}
+
+.form .form-control.error small {
+    visibility: visible;
+}
+
+.form .form-control.error input {
+    border-color: var(--primary-red-dark);
+}
+
+.form .form-control.success input {
+    border-color: var(--primary-green-dark);
+}
+
+.form .form-submit {
+    color: whitesmoke;
+    background-color: #FF5160;
+    padding: 1rem 0;
+    display: block;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+.fa-eye {
+
+    color: gray;
+
+    font-size: 20px;
+    padding: 9px 0;
+    position: absolute;
+    right: 0.75em;
+    top: 0.2em;
+    z-index: 9;
+
+}
+
+
+
+.user {
+    color: white;
+    background-color: #FF5160;
+    width: 50px;
+    height: 46px;
+    font-size: 24px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 100%;
+    position: absolute;
+    top:-28px;
+    left:34px;
+    box-shadow: 0 3px 5px rgb(196 196 196);
+
+    
+}
+
+.user .fa{
+  margin: auto;
+ 
+}
+
+
+ .condition{
+    color:#ff5160 ;
+    text-decoration: underline;
+  } 
+  a:hover {
+    color:#ff5160 ; 
+  }
+
+.textfield__icon,
+.textfield__label,
+.textfield__text-input {
+    transition-duration: 200ms;
+    transition-timing-function: ease-in;
+    
+}
+
+/* Remove mobile device input field default shading */
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.para-head{
+  padding: 1rem 1rem 0rem;
+  margin-bottom: 0px;
+  color:rgb(90, 86, 86)
+}
+
+.textfield {
+
+    display: inline-block;
+    border-radius: 4px;
+    background: #FFF;
+    color:rgb(90, 86, 86);
+    text-align: center;
+    position: relative;
+}
+.para{
+   color:#AAA ;
+   font-size: 13px;
+}
+.textfield__text-input {
+    background: transparent;
+    color: #555;
+    border: 1px solid #AAA;
+    font-weight: 300;
+    border-radius: 4px;
+    padding-left: 36px;
+    outline: none;
+    width: 329px;
+    height: 44px;
+}
+.textfield__text-input--active {
+    border-color: #FF5160;
+}
+.textfield__text-input--active + .textfield__label {
+    top: -6px;
+    font-size: 12px;
+    color: #FF5160;
+}
+
+.textfield__label {
+    position: absolute;
+    background: #FFF;
+    padding: 0 0.5em;
+    font-weight: lighter;
+    font-size: 14px;
+    top: calc(32% - 7px);
+    left: 16px;
+    
+}
+
+
+.textfield__label_ps {
+  position: absolute;
+  background: #FFF;
+  padding: 0 0.5em;
+  font-weight: lighter;
+  font-size: 14px;
+  top: calc(32% - 7px);
+  left: 16px;
+}
+.textfield__label_pss {
+   
+    top: calc(32% - 18px);
+  
+  }
+  
+.textfield__icon {
+    font-family: "Material Icons";
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(18px - 8px);
+}
+.textfield__icon--user::before {
+    content: "";
+}
+.textfield__icon--address::before {
+    content: "";
+}
+.textfield__icon--email::before {
+    content: "";
+}
+.textfield__icon--phone::before {
+    content: "";
+}
+
+
+.check{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  margin-bottom: 16px;
+}
+
+.check input{
+  margin: auto;
+}
+
+.check p{
+  margin: auto;
+  padding-left: 8px;
+}
